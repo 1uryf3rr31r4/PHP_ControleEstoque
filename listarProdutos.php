@@ -8,11 +8,11 @@
 
 <html lang="pt-br">
     <head>
+        <title>Controle de Estoque</title>
         <meta charset="utf-8" />
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script language="javascript" src="scripts.js"></script>
-        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
-        <link rel="stylesheet" type="text/css" href="css/estilo.css">        
+        <link rel="stylesheet" type="text/css" href="css/estilo2.css">      
     </head>
     <body>
         <br>
@@ -20,18 +20,17 @@
             $result_listaProd = "SELECT * FROM produto";
             $resultado_listProd = mysqli_query($conexao, $result_listaProd);
         ?>
-        <table>
-            <th>
-                <td>Código do Produto</td>
-                <td>Nome do Produto</td>
-                <td>Quantidade de Produto</td>
-                <td>Data de Criação</td>
-            </th>
+        <table class="listaProd">
+            <tr>
+                <th>Código do Produto</td>
+                <th>Nome do Produto</td>
+                <th>Quantidade de Produto</td>
+                <th>Data de Criação</td>
+            </tr>
             <?php
                 while($row_listProd = mysqli_fetch_assoc($resultado_listProd))
                 {
                     echo "<tr>
-                            <td></td>
                             <td>".$row_listProd['CodProduto']."</td>",
                             "<td>".$row_listProd['NomeProduto']."</td>",
                             "<td>".$row_listProd['Quantidade']."</td>",
@@ -42,6 +41,6 @@
         </table>
         <br>
         <button type="button" onclick="goBack()">Voltar</button>
-        <h2><a href="logout.php">Sair</a></h2>
+        <button><a class="linkLimpo" href="logout.php">Sair</a></button>
     </body>
 </html>

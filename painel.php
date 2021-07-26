@@ -7,15 +7,18 @@
 
 <html lang="pt-br">
     <head>
+        <title>Controle de Estoque</title>
         <meta charset="utf-8" />
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script language="javascript" src="scripts.js"></script>
-        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
-        <link rel="stylesheet" type="text/css" href="css/estilo.css">        
+        <link rel="stylesheet" type="text/css" href="css/estilo2.css">        
     </head>
     <body>
-    	<a href="adicionarProduto.php">Adicionar Produtos</a> | <a href="">Dar Baixa em Produtos</a> | <a href="listarProdutos.php">Listar Produtos</a> | <a href="">Exibir Relatório</a> 
+        <br>
+    	<a href="adicionarProduto.php">Adicionar Produtos</a> | <a href="">Dar Baixa em Produtos</a> | <a href="listarProdutos.php">Listar Produtos</a> | <a href="">Exibir Relatório</a>
+        <br>
+        <br>
 
-	<h2><a href="logout.php">Sair</a></h2>
+        <button><a class="linkLimpo" href="logout.php">Sair</a></button>
 	</body>
 </html>
