@@ -1,0 +1,1 @@
+alter table produto add column criado datetime
