@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: 26-Jul-2021 às 18:11
+-- Generation Time: 26-Jul-2021 às 23:58
 -- Versão do servidor: 5.7.23
 -- versão do PHP: 7.2.10
 
@@ -65,14 +65,15 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `senha` varchar(32) NOT NULL,
   `criado` datetime DEFAULT NULL,
   PRIMARY KEY (`usuario_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `usuarios`
 --
 
 INSERT INTO `usuarios` (`usuario_id`, `nome`, `senha`, `criado`) VALUES
-(1, 'Iury', 'd63d033f4ccdc34e8a3eb45f793f7c9d', '2021-07-20 12:00:00');
+(1, 'Iury', 'd63d033f4ccdc34e8a3eb45f793f7c9d', '2021-07-20 12:00:00'),
+(2, 'Pulses', 'f31b342e485234079b324a3422068ca6', '2021-07-26 20:53:41');
 
 --
 -- Indexes for dumped tables
