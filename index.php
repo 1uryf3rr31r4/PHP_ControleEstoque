@@ -3,7 +3,7 @@
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
     <head>
         <meta charset="utf-8">
         <title>Controle de Estoque</title>
@@ -15,13 +15,13 @@
         ?>
             <p>ERRO: Usuário ou senha inválidos.</p>
         <?php
-                endif;
-                unset($_SESSION['nao_autenticado']);
+            endif;
+            unset($_SESSION['nao_autenticado']);
         ?>
         <form action="login.php" method="POST">
-            <input name="usuario" name="text" class="input is-large" placeholder="Seu usuário" autofocus="">
-            <input name="senha" class="input is-large" type="password" placeholder="Sua senha">
-            <button type="submit" class="button is-block is-link is-large is-fullwidth">Entrar</button>
+            <input name="usuario" type="text" placeholder="Seu usuário" autofocus="">
+            <input name="senha" type="password" placeholder="Sua senha">
+            <button type="submit">Entrar</button>
         </form>
     </body>
 </html>
