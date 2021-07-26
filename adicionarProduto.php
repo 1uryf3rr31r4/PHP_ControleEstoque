@@ -6,6 +6,7 @@
 
 <h2>Olá, <?php echo $_SESSION['usuario'];?></h2>
 
+<!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <meta charset="utf-8" />
