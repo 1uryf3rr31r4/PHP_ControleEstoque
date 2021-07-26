@@ -1,9 +1,19 @@
+<?php
+    session_start();
+    include('verifica_login.php');
+    include ('conexao.php');
+?>
+
+<h2>Olá, <?php echo $_SESSION['usuario'];?></h2>
+
+<!DOCTYPE html>
 <html lang="pt-br">
-    <head>
+<head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" type="text/css" href="css/estilo.css" />
-        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script language="javascript" src="scripts.js"></script>
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">        
     </head>
     <body>
         <div id=area-cabecalho>

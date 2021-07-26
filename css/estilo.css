@@ -1,5 +1,3 @@
-/*
-
 *
 {
 	margin: 0px;
@@ -12,6 +10,20 @@ body
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	background: #e6e6e6;
 }
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+}
+
+
+/*
+
+
+
 	
 #area-cabecalho
 {
@@ -118,17 +130,13 @@ a
 	text-decoration: none;
 }
 
-
  #area-menu a:visited
 table tr td
 {
     margin:5px;
 }
 
-table tr td h2
-{
-    background-color: #159cb0;
-}
+
 
 ul
 {

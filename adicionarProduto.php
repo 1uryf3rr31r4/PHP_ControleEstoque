@@ -10,12 +10,10 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" type="text/css" href="css/estilo.css" />
-        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script language="javascript" src="scripts.js"></script>
-
-</script>
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
     </head>
     <body>
         <h3>Adicionar Produto</h3>

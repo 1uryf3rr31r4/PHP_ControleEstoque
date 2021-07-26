@@ -9,29 +9,38 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" type="text/css" href="css/estilo.css" />
-        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script language="javascript" src="scripts.js"></script>
-
-</script>
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">        
     </head>
     <body>
-
-    	<?php
-
-    		$dbname = 'estoque';
-    		$sql = "SHOW TABLE FROM {$dbname}";
-    		$result = mysqli_query($conexao, $sql);
-
-    		while($row = mysqli_affected_rows($))
-    		{
-    			echo "Lista : {$row[0]}\n";
-    		}
-
-    		/*mysql_free_result($result);*/
-    	?>	
-
+        <br>
+        <?php
+            $result_listaProd = "SELECT * FROM produto";
+            $resultado_listProd = mysqli_query($conexao, $result_listaProd);
+        ?>
+        <table>
+            <th>
+                <td>Código do Produto</td>
+                <td>Nome do Produto</td>
+                <td>Quantidade de Produto</td>
+                <td>Data de Criação</td>
+            </th>
+            <?php
+                while($row_listProd = mysqli_fetch_assoc($resultado_listProd))
+                {
+                    echo "<tr>
+                            <td></td>
+                            <td>".$row_listProd['CodProduto']."</td>",
+                            "<td>".$row_listProd['NomeProduto']."</td>",
+                            "<td>".$row_listProd['Quantidade']."</td>",
+                            "<td>".$row_listProd['Criado']."</td>
+                            </tr>";
+                }
+            ?>
+        </table>
+        <br>
         <button type="button" onclick="goBack()">Voltar</button>
         <h2><a href="logout.php">Sair</a></h2>
     </body>
