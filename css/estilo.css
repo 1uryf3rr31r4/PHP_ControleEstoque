@@ -1,0 +1,179 @@
+/*
+
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+body
+{
+	font-size: 1em;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #e6e6e6;
+}
+	
+#area-cabecalho
+{
+	border: 1px solid red;
+	background-color: #159cb0;
+	color: #FFF;
+	padding: 15px;
+	text-align: center;
+}
+
+#area-principal
+{
+	width: 1000px;
+	margin: auto auto;
+	padding: 15px;
+	border: 1px solid red;
+	position: relative;
+}
+
+.login
+{
+	border: 1px solid red;
+	margin-top: 15px;
+	margin-left: 400px;
+}
+
+.login button
+{
+	border: 1px solid red;
+}
+
+
+#area-menu
+{
+	width: 920px;
+	margin: 0px auto;
+	padding: 15px;
+	display: block;
+	text-align: center;
+}
+
+#area-conteudo
+{
+	width: 920px;
+	margin: 0px auto;
+	padding: 15px;
+	display: block;
+	text-align: center;
+}
+
+#area-conteudoBaixa
+{
+	width: 920px;
+	margin: 0px auto;
+	padding: 15px;
+	display: block;
+	text-align: center;
+}
+
+#area-rodape
+{
+	clear: both;
+	padding: 15px;
+	margin: 0px auto;
+	text-align: left;
+	border: 1px solid red;
+}
+
+.menu
+{
+	margin: 10px;
+}
+
+.baixar table, .baixar th, .baixar td
+{	
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.baixar th, .baixar td {
+  padding: 5px;
+  text-align: center;    
+}
+
+
+
+#area-menu a:link
+{
+	color: #159cb0;
+	background: #FFF;
+	padding: 10px 14px;
+}
+
+#area-menu a:hover
+{
+	color: #FFF;
+	background: #159cb0;
+	text-decoration: none;
+
+}
+
+a
+{
+	text-decoration: none;
+}
+
+
+ #area-menu a:visited
+table tr td
+{
+    margin:5px;
+}
+
+table tr td h2
+{
+    background-color: #159cb0;
+}
+
+ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 720px;
+	background: #159cb0 url(imagens/fundo-horizontal.png) repeat-x;
+	float: left;
+}
+
+ul li
+{
+	float: left;
+}
+
+ul a
+{
+	display: block;
+	padding: 0 2em;
+	line-height: 2.2em;
+	text-decoration: none;
+	color: #fff;
+	background: url(imagens/divisor.png) repeat-y left top;
+}
+
+ul .primeiro a
+{
+	background: none;
+}
+
+ul a:houver
+{
+	color: #085662;
+	background: #44cade;
+    text-decoration: none;
+
+}
+
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a
+{
+	background-position: right bottom;
+	background-color: #f99200;
+	color: #fff;
+    text-decoration: none;
+}
